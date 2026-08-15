@@ -20,8 +20,9 @@ Keys inside the leveldb:
 
 1. **leveldb value**: first byte is the leveldb "type" byte `0x01`
    (string), followed by an LZString base64 payload (decoded as latin1).
-2. **LZString**: the game's own variant — `src/codec/lz_string.js` is
-   vendored from the APK's `apk_lz_string.js` and must match exactly.
+2. **LZString**: the game uses its own LZString build. We depend on the
+   `lz-string` npm package and prove compatibility with a byte-faithful
+   roundtrip test against the genuine fixture (`tests/test_codec.js`).
 3. **JSON**: `JSON.parse` of the decompressed string yields the RPGM save
    object with JsonEx annotations.
 

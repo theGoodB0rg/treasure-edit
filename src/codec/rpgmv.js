@@ -10,7 +10,7 @@
 // serialize/deserialize, NOT a length gate. "@a" is the real array.
 // Therefore edits must be applied through the "@a" arrays and "@c" must be
 // left untouched.
-const LZString = require('../codec/lz_string.js');
+const LZString = require('lz-string');
 
 function decodeLevelValue(value) {
   if (!value || value.length < 2) {
