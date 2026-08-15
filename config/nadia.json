@@ -1,0 +1,40 @@
+{
+  "app": {
+    "name": "nadia",
+    "id": "nlt.media.treasure",
+    "title": "Treasure of Nadia",
+    "save_engine": "rpgmv_webview"
+  },
+  "leveldb": {
+    "rel_path": "apps/nlt.media.treasure/r/app_webview/Default/Local Storage/leveldb",
+    "slot1_key": "5f66696c653a2f2f00015250472046696c6531",
+    "global_key": "5f66696c653a2f2f000152504720476c6f62616c"
+  },
+  "fields": {
+    "money": {
+      "party": "_gold",
+      "variables": [2, 51, 208, 353],
+      "variable51_format": "currency"
+    },
+    "moan": {
+      "variables": [3]
+    },
+    "kamasutra_total": {
+      "variables": [496, 363, 81],
+      "status_variable": 263
+    }
+  },
+  "kamasutra": {
+    "page_switches": [341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,
+      1328,1396,1478,1542,1593,1629,1664,1728,1748,1785,1832,1910,1955,2036,2073,2132,2182,2229,2283,2365,
+      2420,2455,2515,2534,2535,2542,2543,2550,2552,2562,2560,2574,2583,2595],
+    "girl_variables": [82,83,84,85,86,87,88,89,90,91,92,93],
+    "pages_per_girl": 5,
+    "total_pages": 60
+  },
+  "items": {
+    "keys": [19,27,38,46,56,136,268,311],
+    "lures": [95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112],
+    "torn_pages": [318,319,320,321,322,323,324,325,326,327,328,329]
+  }
+}
