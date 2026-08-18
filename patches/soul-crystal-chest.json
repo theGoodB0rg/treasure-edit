@@ -1,14 +1,9 @@
 {
   "switches": {
+    "737": true,
+    "738": true,
     "751": false,
-    "754": true,
-    "800": true,
-    "1567": true,
-    "2134": true,
-    "2235": true,
-    "2237": true,
-    "2577": true,
-    "2578": true
+    "754": true
   },
   "variables": {
     "21": "HeBaOp.Show Diana your newly found treasure.",
@@ -26,6 +21,7 @@
     "226": 5,
     "227": 5,
     "228": 5,
-    "201": 5
+    "201": 5,
+    "115": 1
   }
 }
