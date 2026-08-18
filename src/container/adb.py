@@ -25,10 +25,10 @@ class AdbError(Exception):
 
 
 def run(args: list[str], timeout: int = 60) -> str:
-    proc = subprocess.run(["adb", *args], capture_output=True, text=True, timeout=timeout)
+    proc = subprocess.run(["adb", *args], capture_output=True, timeout=timeout)
     if proc.returncode != 0:
-        raise AdbError(f"adb {' '.join(args)} failed: {proc.stderr.strip()}")
-    return proc.stdout
+        raise AdbError(f"adb {' '.join(args)} failed: {proc.stderr.decode('utf-8', errors='replace').strip()}")
+    return proc.stdout.decode("utf-8", errors="replace")
 
 
 def pidof(package: str) -> str:

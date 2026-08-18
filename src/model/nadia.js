@@ -57,6 +57,24 @@ function apply(patch, save, cfg) {
     }
   }
 
+  if (patch.item_quantities && typeof patch.item_quantities === 'object') {
+    for (const [id, qty] of Object.entries(patch.item_quantities)) {
+      save.party._items[String(id)] = Number(qty);
+    }
+  }
+
+  if (patch.switches && typeof patch.switches === 'object') {
+    for (const [id, val] of Object.entries(patch.switches)) {
+      sw[Number(id)] = !!val;
+    }
+  }
+
+  if (patch.variables && typeof patch.variables === 'object') {
+    for (const [id, val] of Object.entries(patch.variables)) {
+      vars[Number(id)] = val;
+    }
+  }
+
   return save;
 }
 
