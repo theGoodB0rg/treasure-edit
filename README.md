@@ -67,6 +67,11 @@ force-stopped and you pressing "Restore my data" on the device. Never kill
 `com.android.backupconfirm`. `pm clear` is blocked on some ROMs — a full wipe
 is a Settings → Apps → Clear data job.
 
+**Save slots**: the game has multiple save slots stored as separate LevelDB
+keys (`RPG File1`, `RPG File2`). To edit a different slot, temporarily swap
+`slot1_key` in `config/nadia.json` to the target slot's key hex, run the
+patch pipeline, then swap it back.
+
 ## Quickstart
 
 ```bash
